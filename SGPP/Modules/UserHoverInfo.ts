@@ -121,7 +121,7 @@ module ModuleDefinition{
                                 }
                             });
                         }
-                    }, 1500);
+                    }, 500);
                 },
                 close: function() {
                     clearTimeout(this.timeout);
