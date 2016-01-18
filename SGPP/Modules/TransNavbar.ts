@@ -5,6 +5,7 @@ module ModuleDefinition{
     export class TransNavbar implements SteamGiftsModule {
 
         style = "header { transition: opacity 0.4s ease-in-out }\n" +
+		"header.scroll { opacity:0.3 }" +
 		"header:hover { opacity:1 }";
 
         init(): void {
