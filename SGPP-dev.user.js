@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Steamgifts++
 // @namespace       https://github.com/faragona/SGPP
-// @version         0.4.1 beta
+// @version         0.0.2 beta
 // @description     SG++ for Steamgifts.com
 // @author          faragona
 // @match           http://www.steamgifts.com/*
