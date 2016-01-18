@@ -5,8 +5,8 @@ module ModuleDefinition{
     export class scroll implements SteamGiftsModule {
 
         style = "header { transition: opacity 0.4s ease-in-out }\n" +
-		"header.scroll { opacity:0.3 }" +
-		"header:hover { opacity:1 }";
+		"header.scroll { opacity:0.3 }\n" +
+		"header:hover { opacity:1 }\n";
 
         init(): void {
         }
