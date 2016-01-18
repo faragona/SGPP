@@ -125,7 +125,7 @@ module ModuleDefinition{
                 },
                 close: function() {
                     clearTimeout(this.timeout);
-                    bubble.stop(true).delay(500).fadeOut('slow');
+                    bubble.stop(true).delay(200).fadeOut('slow');
                 }
             };
 

@@ -299,7 +299,7 @@ module ModuleDefinition {
                             $(el).find('.table__column--width-fill > p').first().append(' - no new comments</strong>');
                         }
 
-                        $(el).find('h3').first().append('<span class="markcomments_controls pull-right"><i class="fa fa-remove markcomments_forget" title="Forget this topic"></i></span>');
+                        $(el).find('h3').first().append('<span class="markcomments_controls"><i class="fa fa-remove markcomments_forget" title="Forget this topic"></i></span>');
                     }
                 }
                 catch (err) {
