@@ -34,6 +34,7 @@
     <TypeScriptCompile Include="Modules\EntryCommenters.ts" />
     <TypeScriptCompile Include="Modules\FixedFooter.ts" />
     <TypeScriptCompile Include="Modules\FixedNavbar.ts" />
+	<TypeScriptCompile Include="Modules\TransNavbar.ts" />
     <TypeScriptCompile Include="Modules\GridView.ts" />
     <TypeScriptCompile Include="Modules\LivePreview.ts" />
     <TypeScriptCompile Include="Modules\MessagesFilterTest.ts" />
