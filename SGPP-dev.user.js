@@ -801,11 +801,11 @@ var ModuleDefinition;
                                 }
                             });
                         }
-                    }, 1500);
+                    }, 200);
                 },
                 close: function () {
                     clearTimeout(this.timeout);
-                    bubble.stop(true).delay(500).fadeOut('slow');
+                    bubble.stop(true).delay(200).fadeOut('slow');
                 }
             };
             $(document).on({
