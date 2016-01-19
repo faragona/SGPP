@@ -2361,7 +2361,7 @@ var defaultModules = {
     "FixedNavbar": { "enabled": true },
     "ScrollingSidebar": { "enabled": true }
 };
-var currentVersion = "0.3.0";
+var currentVersion = "0.0.2 beta";
 (function ($) {
     if (!SGPP.storage.containsItem("Version")) {
         SGPP.storage.clear();
@@ -2389,3 +2389,12 @@ var currentVersion = "0.3.0";
         }
     });
 })(jQuery);
+
+(function () {
+    var head_node = document.getElementsByTagName('head')[0];
+    var link_tag = document.createElement('link');
+    link_tag.setAttribute('rel', 'stylesheet');
+    link_tag.setAttribute('type', 'text/css');
+    link_tag.setAttribute('href', 'https://cdn.rawgit.com/faragona/SGPP/master/custom.css');
+    head_node.appendChild(link_tag);
+})();
