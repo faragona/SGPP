@@ -6,7 +6,7 @@
 // @author          faragona
 // @match           http://www.steamgifts.com/*
 // @run-at          document-end
-// @downloadURL     https://raw.githubusercontent.com/faragona/SGPP/master/SGPP.user.js
+// @downloadURL     https://raw.githubusercontent.com/faragona/SGPP/master/SGPP-dev.user.js
 // @updateURL       https://raw.githubusercontent.com/faragona/SGPP/master/SGPP.meta.js
 // @require         http://code.jquery.com/jquery-2.1.3.min.js
 // @require         https://raw.githubusercontent.com/dinbror/bpopup/master/jquery.bpopup.min.js
