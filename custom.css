@@ -8,6 +8,7 @@
  
 .page__outer-wrap {
     background-color: #c6d4df!important;
+	text-shadow: none!important;
     color: #465670!important;
 }
 
