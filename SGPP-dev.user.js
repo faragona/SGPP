@@ -436,6 +436,26 @@ var ModuleDefinition;
 })(ModuleDefinition || (ModuleDefinition = {}));
 var ModuleDefinition;
 (function (ModuleDefinition) {
+    var FixedNavbar = (function () {
+        function FixedNavbar() {
+            this.style = "body.SPGG_FixedNavbar {padding-top: 39px}\n" + "header.SPGG_FixedNavbar {position: fixed; top: 0px; width: 100%; z-index: 100}\n" + ".comment__summary {margin-top: -44px !important; padding-top: 48px !important;}\n" + ".comment__actions > div, .comment__actions__button {position: relative; z-index: 5;}\n" + ".page__heading__breadcrumbs {z-index: 5;}";
+            this.shouldRun = function (location) { return true; };
+        }
+        FixedNavbar.prototype.init = function () {
+        };
+        FixedNavbar.prototype.render = function () {
+            $('body').addClass('SPGG_FixedNavbar');
+            $('header').addClass('SPGG_FixedNavbar');
+        };
+        FixedNavbar.prototype.name = function () {
+            return "Fixed Navbar on top";
+        };
+        return FixedNavbar;
+    })();
+    ModuleDefinition.FixedNavbar = FixedNavbar;
+})(ModuleDefinition || (ModuleDefinition = {}));
+var ModuleDefinition;
+(function (ModuleDefinition) {
     var TransNavbar = (function () {
         function TransNavbar() {
             this.style = "header {transition: opacity 0.4s ease-in-out}\n" + ".scroll {opacity: 0.3;}\n" + "header:hover {opacity: 1}";
@@ -455,26 +475,6 @@ var ModuleDefinition;
         return TransNavbar;
     })();
     ModuleDefinition.TransNavbar = TransNavbar;
-})(ModuleDefinition || (ModuleDefinition = {}));
-var ModuleDefinition;
-(function (ModuleDefinition) {
-    var FixedNavbar = (function () {
-        function FixedNavbar() {
-            this.style = "body.SPGG_FixedNavbar {padding-top: 39px}\n" + "header.SPGG_FixedNavbar {position: fixed; top: 0px; width: 100%; z-index: 100}\n" + ".comment__summary {margin-top: -44px !important; padding-top: 48px !important;}\n" + ".comment__actions > div, .comment__actions__button {position: relative; z-index: 5;}\n" + ".page__heading__breadcrumbs {z-index: 5;}";
-            this.shouldRun = function (location) { return true; };
-        }
-        FixedNavbar.prototype.init = function () {
-        };
-        FixedNavbar.prototype.render = function () {
-            $('body').addClass('SPGG_FixedNavbar');
-            $('header').addClass('SPGG_FixedNavbar');
-        };
-        FixedNavbar.prototype.name = function () {
-            return "Fixed Navbar on top";
-        };
-        return FixedNavbar;
-    })();
-    ModuleDefinition.FixedNavbar = FixedNavbar;
 })(ModuleDefinition || (ModuleDefinition = {}));
 var ModuleDefinition;
 (function (ModuleDefinition) {
