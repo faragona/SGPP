@@ -8,7 +8,7 @@
  
 .page__outer-wrap {
     background-color: #c6d4df!important;
-	text-shadow: none!important;
+    padding-top: 80px;
     color: #465670!important;
 }
 
@@ -59,3 +59,18 @@
     max-width: 100%;
 }
 
+/* From this line onward is the fixed navigation bar option. Surround this section with comment marks to disable fixed nav-bar*/
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.scroll {
+    opacity: 0.3;
+}
+
+header:hover {
+    opacity: 1;
+}

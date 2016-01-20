@@ -456,28 +456,6 @@ var ModuleDefinition;
 })(ModuleDefinition || (ModuleDefinition = {}));
 var ModuleDefinition;
 (function (ModuleDefinition) {
-    var TransNavbar = (function () {
-        function TransNavbar() {
-            this.style = "header {transition: opacity 0.4s ease-in-out}\n" + ".scroll {opacity: 0.3;}\n" + "header:hover {opacity: 1}";
-            this.shouldRun = function (location) { return true; };
-        }
-        TransNavbar.prototype.init = function () {
-        };
-        TransNavbar.prototype.render = function () {
-            if ($(window).scrollTop() > 40 ){
-				$('header').addClass('scroll');
-			} else {
-				$('header').removeClass('scroll');
-			};
-        TransNavbar.prototype.name = function () {
-            return "Navbar becomes transparent when scrolled down.";
-        };
-        return TransNavbar;
-    })();
-    ModuleDefinition.TransNavbar = TransNavbar;
-})(ModuleDefinition || (ModuleDefinition = {}));
-var ModuleDefinition;
-(function (ModuleDefinition) {
     var FixedFooter = (function () {
         function FixedFooter() {
             this.style = "body.SGPP_FixedFooter {padding-bottom: 45px}\n" + ".footer__outer-wrap.SGPP_FixedFooter_outerWrap {padding: 15px 0px; z-index: 100; bottom: 0px; position: fixed; width: 100%; background: inherit}\n" + ".footer__inner-wrap.SGPP_FixedFooter_innerWrap {margin: 0px 25px}\n";
@@ -2420,3 +2398,17 @@ var currentVersion = "0.0.2 beta";
     link_tag.setAttribute('href', 'https://rawgit.com/faragona/SGPP/master/custom.css');
     head_node.appendChild(link_tag);
 })();
+
+$(window).scroll(function() {
+// 100 = The point you would like to fade the nav in.
+  
+        if ($(window).scrollTop() > 40 ){
+    
+                $('header').addClass('scroll');
+    
+  } else {
+    
+    $('header').removeClass('scroll');
+    
+        };      
+});
