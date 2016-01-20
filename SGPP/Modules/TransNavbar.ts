@@ -4,9 +4,15 @@ module ModuleDefinition{
 
     export class TransNavbar implements SteamGiftsModule {
 
-        style = "header { transition: opacity 0.4s ease-in-out }\n" +
-		"header.scroll { opacity:0.3 }\n" +
-		"header:hover { opacity:1 }\n";
+        if ($(window).scrollTop() > 40 ){
+    
+			$('header').addClass('scroll');
+    
+		} else {
+    
+			$('header').removeClass('scroll');
+    
+        };
 
         init(): void {
         }
@@ -19,3 +25,4 @@ module ModuleDefinition{
     }
 
 }
+

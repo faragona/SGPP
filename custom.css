@@ -59,14 +59,3 @@
     max-width: 100%;
 }
 
-header {
-    transition: opacity 0.4s ease-in-out;
-}
-
-.scroll {
-    opacity: 0.3;
-}
-
-header:hover {
-    opacity: 1;
-}
