@@ -74,3 +74,25 @@ header {
 header:hover {
     opacity: 1;
 }
+
+/* Popup GA */
+
+.SGPP__popup_giveaway .align-button-container {
+	width: 200px;
+    position: relative;
+    left: 810px;
+    top: -107px;
+}
+
+.SGPP__popup_giveaway .comment__submit-button {
+    width: 80px;
+    margin-bottom: -37px;
+    line-height: 18px;
+    padding: 15px;
+}
+
+.SGPP__popup_giveaway .comment__cancel-button {
+    position: relative;
+    left: -83px;
+    top: 70px;
+}
