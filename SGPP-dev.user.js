@@ -436,6 +436,28 @@ var ModuleDefinition;
 })(ModuleDefinition || (ModuleDefinition = {}));
 var ModuleDefinition;
 (function (ModuleDefinition) {
+    var TransNavbar = (function () {
+        function TransNavbar() {
+            this.style = "header {transition: opacity 0.4s ease-in-out}\n" + ".scroll {opacity: 0.3;}\n" + "header:hover {opacity: 1}";
+            this.shouldRun = function (location) { return true; };
+        }
+        TransNavbar.prototype.init = function () {
+        };
+        TransNavbar.prototype.render = function () {
+            if ($(window).scrollTop() > 40 ){
+				$('header').addClass('scroll');
+			} else {
+				$('header').removeClass('scroll');
+			};
+        TransNavbar.prototype.name = function () {
+            return "Navbar becomes transparent when scrolled down.";
+        };
+        return TransNavbar;
+    })();
+    ModuleDefinition.TransNavbar = TransNavbar;
+})(ModuleDefinition || (ModuleDefinition = {}));
+var ModuleDefinition;
+(function (ModuleDefinition) {
     var FixedNavbar = (function () {
         function FixedNavbar() {
             this.style = "body.SPGG_FixedNavbar {padding-top: 39px}\n" + "header.SPGG_FixedNavbar {position: fixed; top: 0px; width: 100%; z-index: 100}\n" + ".comment__summary {margin-top: -44px !important; padding-top: 48px !important;}\n" + ".comment__actions > div, .comment__actions__button {position: relative; z-index: 5;}\n" + ".page__heading__breadcrumbs {z-index: 5;}";
@@ -2389,29 +2411,6 @@ var currentVersion = "0.0.2 beta";
         }
     });
 })(jQuery);
-
-(function (ModuleDefinition) {
-    var TransNavbar = (function () {
-        function TransNavbar() {
-            this.style = "header {transition: opacity 0.4s ease-in-out}\n" + ".scroll {opacity: 0.3;}\n" + "header:hover {opacity: 1}";
-            this.shouldRun = function (location) { return true; };
-        }
-        TransNavbar.prototype.init = function () {
-        };
-        TransNavbar.prototype.render = function () {
-            if ($(window).scrollTop() > 40 ){
-				$('header').addClass('scroll');
-			} else {
-				$('header').removeClass('scroll');
-			};
-        TransNavbar.prototype.name = function () {
-            return "Navbar becomes transparent when scrolled down.";
-        };
-        return TransNavbar;
-    })();
-    ModuleDefinition.TransNavbar = TransNavbar;
-})(ModuleDefinition || (ModuleDefinition = {}));
-
 
 (function () {
     var head_node = document.getElementsByTagName('head')[0];
