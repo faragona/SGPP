@@ -11,6 +11,7 @@
 /// <reference path="Modules/CommentAndEnter.ts" />
 /// <reference path="Modules/EntryCommenters.ts" />
 /// <reference path="Modules/FixedNavbar.ts" />
+/// <reference path="Modules/TransNavbar.ts" />
 /// <reference path="Modules/FixedFooter.ts" />
 /// <reference path="Modules/GridView.ts" />
 /// <reference path="Modules/LivePreview.ts" />
@@ -37,6 +38,7 @@ var modulesNames: Array<string> = new Array<string>(
     "CommentAndEnter",
     "EntryCommenters",
     "FixedNavbar",
+	"TransNavbar",
     "FixedFooter",
     "GridView",
     "ScrollingSidebar",
@@ -56,6 +58,7 @@ var modulesNames: Array<string> = new Array<string>(
 
 var defaultModules = {
     "FixedNavbar": { "enabled": true },
+	"TransNavbar": { "enabled": true },
     "ScrollingSidebar": { "enabled": true }
     };
 
