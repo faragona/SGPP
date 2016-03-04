@@ -96,3 +96,7 @@ header:hover {
     left: -83px;
     top: 70px;
 }
+
+.table__column--width-small {
+    width: 9%;
+}
