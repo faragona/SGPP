@@ -113,3 +113,7 @@ header:hover {
     flex-basis:580px!important;
     flex:0;
 }
+
+.poll .table__column--width-fill {
+    flex: 1;
+}
