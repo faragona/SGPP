@@ -100,3 +100,16 @@ header:hover {
 .table__column--width-small {
     width: 9%;
 }
+
+.table__column--width-small{
+    width:9%
+}
+
+.table__heading>div[class^=table__column]:first-child{
+    flex-basis: 634px!important
+}
+
+.table__column--width-fill{
+    flex-basis:580px!important;
+    flex:0;
+}
