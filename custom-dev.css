@@ -142,7 +142,7 @@ header {
 }
 
 .sidebar__entry-insert:not(.is-disabled):hover, .sidebar__action-button:not(.is-disabled):hover, .nav__sits:not(.is-disabled):hover, .form__submit-button:not(.is-disabled):hover, .form__sync-default:not(.is-disabled):hover, .featured__action-button:not(.is-disabled):hover {
-    background-image: -webkit-linear-gradient(#b4e08a 0%, #b4e08a 50%, #b4e08a 100%);
+    background-image: -webkit-linear-gradient(#b4e08a 0%, #b4e08a 50%, #b4e08a 100%)!important;
 }
 
 .sidebar__navigation__item__link:hover {
@@ -150,5 +150,5 @@ header {
 }
 
 .page__heading>* {
-    background-image: -webkit-linear-gradient(#fefefe 0%, #fefefe 100%);
+    background-image: -webkit-linear-gradient(#fefefe 0%, #fefefe 100%)!important;
 }
