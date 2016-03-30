@@ -149,3 +149,6 @@ header {
     background-image: -webkit-linear-gradient(#eee 0%, #eee 100%)!important;
 }
 
+.page__heading>* {
+    background-image: -webkit-linear-gradient(#fefefe 0%, #fefefe 100%);
+}
