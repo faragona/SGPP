@@ -27,6 +27,7 @@
 
 .pagination {
     padding-bottom: 5px!important;
+    color: #465670!important;
 }
 
 .comment--submit {
@@ -38,11 +39,6 @@
     background-color: #fff;
     border-radius: 5px;
     padding: 5px;
-}
-
-
-.pagination  {
-    color: #465670!important;
 }
 
 .page__description {
@@ -59,7 +55,7 @@
     max-width: 100%;
 }
 
-/* From this line onward is the fixed navigation bar option. Surround this section with comment marks to disable fixed nav-bar*/
+/* Fixed navbar */
 header {
     position: fixed;
     width: 100%;
@@ -74,6 +70,7 @@ header {
 header:hover {
     opacity: 1;
 }
+/* End fixed nav-bar */
 
 /* Popup GA */
 
@@ -117,3 +114,38 @@ header:hover {
 .poll .table__column--width-fill {
     flex: 1;
 }
+/* End popup GA */
+
+/* Flat color */
+
+header {
+    background-image: -webkit-linear-gradient(#515763 0%, #515763 100%)!important;
+}
+
+.nav__button-container.is-selected .nav__button {
+    background-image: -webkit-linear-gradient(#d0d5de 0%, #c9cdd7 100%)!important;
+}
+
+.nav__button-container.is-selected .nav__button:hover:not(.is-selected) {
+    background-image: -webkit-linear-gradient(#f0f1f5 0%, #f0f1f5 100%)!important;
+}
+
+.nav__button-container:not(.nav__button-container--notification) {
+    background-image: -webkit-linear-gradient(#757e8f 0%, #757e8f 100%)!important;
+}
+
+.nav__button-container:not(.nav__button-container--notification) .nav__button:hover {
+    background-image: -webkit-linear-gradient(#9ba2b0 0%, #9ba2b0 100%)!important;
+}
+.sidebar__entry-insert, .sidebar__action-button, .nav__sits, .form__submit-button, .form__sync-default, .featured__action-button {
+    background-image: -webkit-linear-gradient(#9ac96a 0%, #9ac96a 100%)!important;
+}
+
+.sidebar__entry-insert:not(.is-disabled):hover, .sidebar__action-button:not(.is-disabled):hover, .nav__sits:not(.is-disabled):hover, .form__submit-button:not(.is-disabled):hover, .form__sync-default:not(.is-disabled):hover, .featured__action-button:not(.is-disabled):hover {
+    background-image: -webkit-linear-gradient(#b4e08a 0%, #b4e08a 50%, #b4e08a 100%);
+}
+
+.sidebar__navigation__item__link:hover {
+    background-image: -webkit-linear-gradient(#eee 0%, #eee 100%)!important;
+}
+
